@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="###">
+    <meta name="description" content="###">
+    
+    <title>Site Demo</title>
+</head>
+<body>
+    <img src="imagens/site.jpg" alt="fotoparke">
+    <nav>
+        <a href="#" target="_blank">HOME</a>
+        <a href="#" target="_blank">BENEFÍCIOS</a>
+        <a href="#" target="_blank">MODALIDADES</a>
+        <a href="#" target="_blank">TREINOS</a>
+        <a href="#" target="_blank">AGENDAMENTOS</a>
+    </nav>
+    <h1>Agendamentos</h1>
+    <p>Agende uma aula experimetal com nossa equipe e conheça as benefícios de uma vida saudavel.</p>
+
+    <form action="arquivo.php" method="post" name="" autocomplete="off">
+
+        <div>
+            <label for="idnome">nome:</label>
+            <input type="text" name="nome" placeholder="nome completo" id="idnome" size="50">
+        </div>
+        <div>
+            <label for="idemail">Email:</label>
+            <input type="email" name="nome" placeholder="Email" id="idemail" size="50">
+        </div>
+        <div>
+            <label for="idsenha">nome:</label>
+            <input type="password" name="senha" placeholder="somente números" id="idsenha" size="50">
+        </div>
+        <div>
+            <label for="idtelefone">nome:</label>
+            <input type="tel" name="telefone" placeholder="(99)99999-9999" id="idtelefone" size="50" pattern="^\(?\d{2}\)\d{5}[-\s]\z{4}.*?$">
+        </div>
+        <div>
+            <label for="idata">data:</label>
+            <input type="date" name="data" id="iddata">
+
+            <label for="horas">horas:</label>
+            <input type="time" id="horas">
+
+            <label for="aula">Aulas:</label>
+            <input type="number" id="aula" min="1" max="10" step="0.5">
+        </div>
+        <label for="">Nivel:</label>
+        <select name="nivel" id="nivel">
+            <option value="" selected disabled>selecione</option>
+            <option value="">iniciante</option>
+            <option value="">básico</option>
+            <option value="">Avançado</option>
+        </select>
+
+        <fieldset>
+            <legend>gênero</legend>
+            
+            <input type="radio" name="genero" id="idmasculino">
+            <label for="idmasculino">Masculino</label>
+             <br>
+            <input type="radio" name="genero" id="idfeminino">
+            <label for="idfeminino">Feminino</label>
+            
+        </fieldset>
+        
+        <fieldset>
+            <legend>Atividade</legend>
+            <input type="checkbox" id="idmus">
+            <label for="">Musculação</label>
+
+            <input type="checkbox" id="idpi">
+            <label for="idpi">Pilates</label>
+
+            <input type="checkbox" id="idco">
+            <label for="idco">Corridas</label>
+
+            <input type="checkbox" id="idyo">
+            <label for="idio">Yoga</label>
+        </fieldset>
+        <label for="idar">mensagem:</label>
+        <textarea name="msg" id="idar" ></textarea>
+        <br>
+
+        <input type="submit" value="envia">
+        <input type="reset" value="cancelar">
+
+
+
+    </form>
+
+    
+    <footer><p>Desevolvido por Bruno Rafael-2022</p></footer>
+</body>
+</html>
